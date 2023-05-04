@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import urlFor from "../../../../lib/urlFor";
 
+
 export const RichTextComponents = {
   types: {
     image: ({ value }: any) => {
@@ -19,7 +20,7 @@ export const RichTextComponents = {
   },
   list: {
     bullet: ({ children }: any) => (
-      <ul className="ml-10 py-5 list-disc space-y-5">{children}</ul>
+      <ul className="ml-10 py-5 list-disc space-y-3 bg-slate-100">{children}</ul>
     ),
     number: ({ children }: any) => (
       <ol className="mt-lg list-decimal">{children}</ol>
@@ -40,7 +41,7 @@ export const RichTextComponents = {
     ),
 
     blockquote: ({ children }: any) => (
-      <blockquote className="border-l-[#F7AB0A] border-l-4 pl-5 py-5 my-5">
+      <blockquote className="border-l-[#b51b15] border-l-4 pl-5 py-5 my-5">
         {children}
       </blockquote>
     ),
@@ -55,7 +56,7 @@ export const RichTextComponents = {
         <Link
           href={value.href}
           rel={rel}
-          className="underline decoration-[#F7AB0A] hover:decoration-black"
+          className=" hover:decoration-black bg-blue-400 hover:bg-blue-950 hover:text-neutral-300 p-3 rounded-full"
         >
           {children}
         </Link>

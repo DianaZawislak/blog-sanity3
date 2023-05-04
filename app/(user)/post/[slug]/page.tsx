@@ -40,7 +40,7 @@ async function Post({ params: { slug } }: Props) {
 
   return (
     <article className="px-10 pb-28">
-      <section className="space-y-2 border-2 border-[#f70a0a] text-white">
+      <section className="space-y-2 border-2 border-[#895757] text-white">
         <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
           <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
             <Image
